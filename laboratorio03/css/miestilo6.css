@@ -1,0 +1,68 @@
+body {
+  background-color: gray;
+}
+.contenedor {
+  background-color: indianred;
+}
+
+.caja1 {
+  background-color: white;
+  border-style: solid;
+  border-width: 5px;
+  border-color: teal;
+}
+
+/* Agregagmos margenes para cada etiqueta div */
+/* Agregamos margen a la izquirda */
+.caja2 {
+  background-color: white;
+  border-style: solid;
+  border-width: 5px;
+  border-color: teal;
+  margin-left: 40px;
+}
+
+/* Agregamos matgen a la derecha */
+.caja3 {
+  background-color: white;
+  border-style: solid;
+  border-width: 5px;
+  border-color: teal;
+  margin-right: 40px;
+}
+
+/* Agregamos matgen a la parte superior */
+.caja4 {
+  background-color: white;
+  border-style: solid;
+  border-width: 5px;
+  border-color: teal;
+  margin-top: 40px;
+}
+
+/* Agregamos matgen a la parte inferior */
+.caja5 {
+  background-color: white;
+  border-style: solid;
+  border-width: 5px;
+  border-color: teal;
+  margin-bottom: 40px;
+}
+
+/* Agregar margen presonalizado */
+.caja6 {
+  background-color: white;
+  border-style: solid;
+  border-width: 5px;
+  border-color: teal;
+  margin: 20px 80px 30px 10px;
+}
+
+/* agregamos la caja al medio de todo */
+.caja7 {
+  background-color: white;
+  border-style: solid;
+  border-width: 5px;
+  border-color: teal;
+  margin: auto;
+}

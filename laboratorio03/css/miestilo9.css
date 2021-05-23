@@ -1,0 +1,71 @@
+body {
+  background-color: blanchedalmond;
+}
+
+.contenedor {
+  background-color: whitesmoke;
+}
+
+.parrafocolor {
+  color: yellowgreen;
+}
+
+.parrafoderecha {
+  text-align: right;
+}
+
+.parrafoizquierda {
+  text-align: left;
+}
+
+.parrafocentro {
+  text-align: center;
+}
+
+.parrafojustificado {
+  text-align: justify;
+}
+
+.parrafosubrayado {
+  text-decoration: underline;
+}
+
+.parrafosobrelinea ¨ {
+  text-decoration: overline;
+}
+
+.parrafostachado {
+  text-decoration: line-through;
+}
+
+.parrafosiestilo {
+  text-decoration: none;
+}
+
+.parrafomayuscula {
+  text-transform: uppercase;
+}
+
+.parrafominuscula {
+  text-transform: uppercase;
+}
+
+.parranombrepropio {
+  text-transform: capitalize;
+}
+
+.parrafoespacionormal {
+  letter-spacing: 5px;
+}
+
+.parrafoespaciocomprimido {
+  letter-spacing: -5px;
+}
+
+.parrafosespaciolineas {
+  line-height: 0.9px;
+}
+
+.parrafosespaciolineascomprimido {
+  letter-spacing: 1.9px;
+}
