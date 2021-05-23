@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajando con Formularios</title>
+</head>
+<body>
+    <h1>Formulario de Registro de Alumnos</h1>
+    <form action="">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="txtDNI">Numero de documento </label> <input type="text" name="txtDni" id="txtDni" placeholder="Ingrese su DNI"><br>
+            <label for="txtNom">Nombres:</label><input type="text" name="txtNom" id="txtaNom" placeholder="Ingrese sus Nombres"><br>
+            <label for="txtApe"Apellidos></label><input type="text" name="txtApe" id="txtApe" placeholder="Ingrese sus Apellidos"><br>
+            <label for="txtFec">Fecha de Nacimiento :</label><input type="date" name="txtFec" id="txtFec"><br>
+            <label for="txtDir">Direccion:</label><input type="text" name="txtDir" id="txtDir" placeholder="Ingrese su Direccion"><br>
+            <label for="cboDistrito"></label>
+            <select name="cboDistrito" id="cboDistrito">
+                <option value="0">Seleccione un Distrito</option>
+                <option value="1">Cercado de Lima</option>
+                <option value="2">Breña</option>
+                <option value="3">San Juan de Lurigancho</option>
+                <option value="4">Jesus Maria</option>
+                <option value="5">La Molina</option>
+            </select><br>
+            <label>Sexo</label><input type="radio" name="sexo" id="rbM"><label for="rbM">Masculino</label> <input type="radio" name="sexo" id="rbf"><label for="rbF">Femenino</label><br>
+            <label for="fulFoto">Fotografia</label><input type="file" name="fulFoto" id="fulFoto"><br>
+            <label for="tatObservaciones">Observaciones</label> <textarea name="tatObservaciones" id="" cols="30" rows="10"></textarea>
+            <label>Estado</label><input type="checkbox" name="chkest" id="chkest"><label for="chkest">Habilitado</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Datos en Curso</legend>
+            <label for="cboCiclo">ciclo</label>
+            <select name="cboCiclo" id="cboCiclo">
+                <option value="0">Seleccione un Ciclo</option>
+                <option value="1">I</option>
+                <option value="2">II</option>
+                <option value="3">III</option>
+                <option value="4">IV</option>
+                <option value="5">V</option>
+                <option value="6">VI</option>
+            </select><br>
+            <label>Turno</label><input type="radio" name="Turno" id="rbM"><label for="rbM">Mañana</label> <input type="radio" name="Turno" id="rbl"><label for="rbl">Tarde</label><input type="radio" name="turno" id="rbN"><label for="rbN">Noche</label><br>
+            <label for="cboSeccion">Seccion</label>
+            <select name="cboSeccion" id="cboSeccion">
+                <option value="0">Seleccione un Opcion</option>
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+                <option value="4">D</option>
+                <option value="5">E</option>
+                <option value="6">F</option>
+                <option value="7">G</option>
+            </select>
+        </fieldset>
+        <button type="submit">Registrar</button>
+        <button type="button">Actualizar</button>
+        <button type="reset">Eliminar</button>
+    </form>
+</body>
+</html>
