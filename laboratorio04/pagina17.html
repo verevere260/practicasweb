@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Parte 4</title>
+    <script type="text/javascript">
+    //Select -> representa una lista desplegable -> contiene opciones que se van a selesccionar
+    // Sintaxis
+    //<select name="" id=""></select>
+    // Dentro del select se agregan las distintas opciones de la lista 
+    // Sintaxis con elementos 
+    // <select name="" id="">
+    //     <option value="Valor1">Elemento 1</option>
+    //     <option value="Valor2">Elemento 2</option>
+    //     <option value="Valor3">Elemento 3</option>
+    //     <option value="Valor4">Elemento 4</option>
+    // </select>
+    //Ejemplo 2
+    // Desarrollar una aplicación que permita calcular el sueldo final de un trabajador si se sabe que el numero de horas trabajadas se ingresan y el costo por hora trabajada tambien se ingresan y el costo por hora trabajada tambien se ingresa. 
+    // Area               Costo por Hora
+    // Administracion     15
+    // Sistemas           18
+    // Contabilidad       16
+    // Soporte            12
+    // Ventas             10
+    // Almacen            13
+    // Adicional se calculara una bonificación de acuerdo a la siguiente tabla:
+    // Categoria     Bonificación
+    // A             3%
+    // B             5%
+    // C             7%
+    // D             9%
+    </script>
+</head>
+<body>
+    <form action="">
+        <label for="txtNh">Numero de horas</label>
+        <input type="text" name="txtNh" id="txtNh">
+        <br>
+        <label for="txtCh">Costo por hora</label>
+        <select name="cboArea" id="cboArea">
+            <option value="0">Seleccione una Area</option>
+            <option value="15">Administracion</option>
+            <option value="18">Sistemas</option>
+            <option value="16">Contabilidad</option>
+            <option value="12">Soporte</option>
+            <option value="10">Ventas</option>
+            <option value="13">Almacen</option>
+        </select>
+        <br>
+        <label for="txtSb">Sueldo basico</label>
+        <input type="text" name="txtSb" id="txtSb">
+        <br>
+        <label for="">Categoria: </label>
+        <input type="radio" name="categoria" id="rbA">
+        <label for="rbA">A</label>
+        <input type="radio" name="categoria" id="rbB">
+        <label for="rbB">B</label>
+        <input type="radio" name="categoria" id="rbC">
+        <label for="rbC">C</label>
+        <input type="radio" name="categoria" id="rbD">
+        <label for="rbD">D</label>
+        <br>
+        <label for="txtBon">Bonificacion</label>
+        <input type="text" name="txtBon" id="txtBon">
+        <br>
+        <label for="">Tardanzas:</label>
+        <input type="checkbox" name="chkTar" id="chkTar">
+        <label for="chkTar">Si</label>
+        <br>
+        <label for="">Descuento</label>
+        <input type="text" name="txtDes" id="txtDes">
+        <br>
+        <label for="">Sueldo Final</label>
+        <input type="text" name="txtSf" id="txtSf">
+        <br>
+        <input type="button" value="Calcular" id="btnCalcular" name="btnCalcular" onclick="Calcular()">
+        <input type="reset" value="Limpiar" id="btnLimpiar" name="btnLimpiar">
+    </form>
+</body>
+</html>

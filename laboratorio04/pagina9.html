@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    // Conectores Logicos
+//Permiten unir 2 o mas condiciones dentro de un if
+//Conector logico Y
+//Es verdadero si todas las condiciones son verdaderas
+//Sintaxis
+//if(cond icion1 && condicion2) - >condicion1=V y condicion2=V ->v
+//if(condicionl && condicion2) ->condicion1=V y condicion2 =F -F
+//Conector Logico 0
+//Es falso si todas las condiciones son falsas
+//Sintaxis
+//if(condicion1 || condicion2) -> condicion1 =V o condi cion 2=V -> V
+//if(condicion1 || condicion2) -> condicionl -V o condicion2-F -> v
+//if(condicionl|| condicion2) condicionl =F o cond icion2-V -> V
+//if(condicion1 || condicion2) -> condicionl =F o condicion2-F -> F
+//Ejemplo 1
+//Desarrollar una aplicacion que permita calcular el sueldo final de un
+//trabaj ador si se sabe que si pertene ce a la categoria 2 y es del turno
+//mañana se le aplicara una bonificacion del 7% en caso contrario no se
+//le aplicara la bonificacion. Hostrar todos los resultados
+//Cuantas variables necesito?
+//5
+//¿Que tipo de datos necesito?
+//Real, Entero, Texto
+//Cuales seria vari ables ?
+// sb, bon, sf, cat, tur
+//Que variables voy a leer?
+// sb, cat, tur
+//definiendo e inicial izando variables
+var sb=0, bon=0, sf=0, cat=0, tur="";
+//capturando valores
+sb=parseFloat (prompt (" Ingrese el sueldo basico: "));
+cat=parseInt (prompt ( "Ingrese la categoria: "));
+tur=prompt("Ingres e el turno [m] o [t] o [n]")
+//condicion
+if (cat==2 && (tur=="m" || tur=="M")){
+    bon=sb*0.07;
+}else{
+    bon=0;
+}
+//realizando operaciones
+sf=sb+bon;
+//mostrando resultados
+alert("El sueldo basico es: "+sb);
+alert("La bonificacion es: "+bon);
+alert ("El sueldo final es: "+sf);
+//Ejemplo 2
+//Desarrollar una aplicacion que pemrita ingres ar 3 numeros y luego
+//calcular cual es el mayor y cual es el menor. Mostrar el numero
+//mayor y mostrar el numero menor
+//Cuantas variables necesito?
+//¿Que tipo de datos neces ito?
+//Entero
+//¿Cuales seria variables ?
+// n1, n2, n3, nma, nme
+//Que variables voy a 1eer?
+// n1, n2, n3
+//definiendo e inicializando variables
+var n1=0, n2=0, n3=0, nma=0, nme=0;
+//capturando valores
+n1=parseInt (prompt ("Ingrese el numero 1: "));
+n2-parseInt (prompt ("Ingrese el numero 2: "))
+n3=parseInt (prompt("Ingrese el numero 3: "));
+//condicion
+if (n1>n2 && nl>n3){
+nma=n1;
+}else{
+if(n2>n1 && n2>n3){
+nma=n2;
+}else{
+nma=n3;
+}
+} b
+if(n1<n2 && nlen3){
+nme=n1;
+}else{
+if (n2<n1 && n2<n3){
+nme=n2;
+}else{
+nme=n3;
+}
+}
+//mostrando resultados
+document.write ("El numero mayor es: "+nma+" <br>");
+document.write ( "El numero menor es: "+nme+" <br> ");
+document.write(" <hr>");
+</script>
+</head>
+<body>
+    
+</body>
+</html>

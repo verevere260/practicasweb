@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Parte 3</title>
+    <script type="text/javascript">
+    // Estructuras repetitivas
+    // Te permiten repetir un bloque de codigo
+    // Se clasifican en 3:
+    // Mientras -> while
+    // Repetir -> do while
+    // Para -> for
+    // Contador -> es una variable que lleva la cuenta de cuantas vueltas va dando el buble, es importante tener un contador si no se genera un buble infinito
+    // sintaxis -> contador=contador+valor; --> valor qes de cuanto en cuanto aumenta las repeticiones
+    // sintaxis while
+    // while(condicion){
+    //     ... programamos...
+    //     cont=cont+valor;
+    // }
+    // Sintaxis do while
+
+
+    // Ejemplo 1
+    // Dsarrollar una aplicación que te permita ingresar tu nombre y mostrar un saludo 5 veces
+    // ¿Cuantas variables necesito?
+    // 2
+    // ¿Que tipo de datos necesito?
+    // Texto, Entero
+    // ¿Cuales serian las variables?
+    // nom, cont
+    // ¿Que variables voy a leer?
+    // nom
+    // Definiendo e inicializando variables
+    var nom="", cont=0;
+    // Capturando valores
+    nom=prompt("Ingresa tu nombre:");
+    // while
+    while(cont<5){
+        document.write("Hola como estas "+nom+"<br>");
+        cont++;
+    }
+    document.write("<hr>");
+    // do while
+    cont=0;
+    do{
+        document.write("Hola como estas "+nom+"<br>");
+        cont++;
+    }while(cont<5);
+    document.write("<hr>");
+    // for
+    for(cont=0;cont<5;cont++){
+        document.write("Hola como estas "+nom+"<br>");
+    }
+    document.write("<hr>");
+    document.write("<hr>");
+
+
+    // Ejemlo2
+    // Desarrollar una aplicación que te permita mostrar los "n" primeros numeros naturales
+    // ¿Cuantas variables necesito?
+    // 2
+    // ¿Que tipo de datos necesito?
+    // Entero
+    // ¿Cuales serian las variables?
+    // cont, can
+    // ¿Que variables voy a leer?
+    // can
+    // Definiendo e inicializando variables
+    var can=0, cont=0;
+    // Capturando variables
+    can=parseInt(prompt("Ingresa la cantidad de numeros:"));
+    // while
+    while(cont<can){
+        document.write(cont+"<br>");
+        cont++;
+    }
+    document.write("<hr>");
+    // do while
+    cont=0;
+    do{
+        document.write(cont+"<br>");
+        cont++;
+    }while(cont<can);
+    document.write("<hr>");
+    //for
+    for(cont=0;cont<can;cont++){
+        document.write(cont+"<br>");
+    }
+    document.write("<hr>");
+    document.write("<hr>");
+
+
+    // Acumulador -> Te permite ir sumando valores a una variable de acuerdo a cada vuelta que dde el bucle
+    // Sintaxis
+    // Desarrollar una aplicación qe premita sumar los "n" primeros numero naturales
+    // ¿Cuantas variables necesito?
+    // 3
+    // ¿Que tipo de datos necesito?
+    // Entero
+    // ¿Cuales serian las variables?
+    // cont, can, sum
+    // ¿Que variables voy a leer?
+    // can
+    // Definiendo e inicializando variables
+    var can=0, cont=0, sum=0;
+    // Capturando variables
+    can=parseInt(prompt("Ingresa la cantidad de numeros:"));
+    // while
+    while(cont<can){
+        document.write(cont+"<br>");
+        sum=sum+cont;
+        cont++;
+    }
+    document.write("La suma es: "+sum);
+    document.write("<hr>");
+    // do while
+    cont=0;
+    sum=0;
+    do{
+        document.write(cont+"<br>");
+        sum=sum+cont;
+        cont++;
+    }while(cont<can);
+    document.write("La suma es: "+sum);
+    document.write("<hr>");
+    //for
+    for(cont=0;cont<can;cont++){
+        document.write(cont+"<br>");
+        sum=sum+cont;
+    }
+    document.write("La suma es: "+sum);
+    document.write("<hr>");
+    document.write("<hr>");
+
+
+    // Ejemplo4
+    // Desarrollar ina aplicación que permita ingresar un valor y spbre ese valor, calcular la tabla de multiplicaión, dependiendo de la cantidad de valores que se va a trabajar.
+    // ¿Cuantas variables necesito?
+    // 3
+    // ¿Que tipo de datos necesito?
+    // Entero
+    // ¿Cuales serian las variables?
+    // cont, can, sum
+    // ¿Que variables voy a leer?
+    // can, sum
+    // Definiendo e inicializando variables
+    var cont=0, can=0, num=0,
+    // Capturando valores
+    can=parseInt(prompt("Ingresa la cantidad de númeors:"));
+    num=parseInt(prompt("Ingresa el numero de tabla:"));
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

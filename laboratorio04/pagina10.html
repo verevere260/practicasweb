@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    //Estructura Selectiva
+//Se basa en la evaluacion de casos, estos casos pueden ser numeros o texto
+//Sintaxis
+// switch(variable) {
+//case valor1 :
+//......programa.......
+//break;
+//case valor2:
+//..............programa.................
+//break;
+//case valorn:
+//..........programa..........
+//break;
+//default:
+//..........programa.........
+//break;
+//}
+//valor1,2,n deben de ser del mismo tipo de dato de la variable
+//Podemos reemplazar a un asignanidado por una estructura selectiva, siempre y cuando
+//Ejemplo 1
+//Desarrollar una aplicacion que permita calcular el sueldo final de un
+//trabajador si se sabe que su sueldo bas ico se ingres a por teclado.
+//Adicional a eso se la va a calcular una bonificacion y un descuento
+//dependie ndo de la categoria a la cual pertenece, como se muestra a
+//continuacion :
+//Categoria Bonificacion Descuento
+//A              7%        5%
+//B              9%        7%
+//C             11%        9%
+//Mostrar todos los resultados
+//Cuantas variables necesito?
+//5
+//Que tipo de datos necesito?
+//Real, Texto
+//Cuales seria variables?
+// sb, bon, des, sf, cat
+//¿Que variables voy a leer?
+//sb, cat
+//definiendo e inicializando variables
+var sb=0, bon=0, des=0, sf=0, cat="";
+//capturando valores
+sb=parseFloat (prompt ("Ingrese el sueldo basico del trabaj ador: "))
+cat-prompt ("Ingrese la categoria [a] o [b] o [c]:")
+//selectiva
+switch (cat.toLowerCase () ){ //toLowerCase () -> convierte todo a minuscula
+case "a":
+bon=sb*0.07;
+des=sb*0.05;
+break;
+case "b":
+bon=sb*0.09;
+des=sb*0.07;
+break;
+case "c":
+bon=sb*0.11;
+des=sb*0.09;
+break;
+default:
+bon=0;
+des=0;
+break
+}
+//realizando operaciones
+sf=sb+bon-des;
+//mostrando resultados
+alert("El sueldo basico es: "+sb);
+alert("La bonificacion es: "+bon);
+alert("El descuento es: "+des);
+alert("El sueldo final es: "+sf);
+//Ejemplo 2
+//Desarrollar una aplicacion que permita ingres ar el precio de un producto y
+//la cantidad a comprar y dependiendo de la categoria se aplicara un
+//descuento al subtotal, tal como se muestra en la siguiente tabla:
+// Categoria     Descuento
+//1
+2
+
+3%
+5%
+7%
+113
+4
+9%
+</script>
+</head>
+<body>
+    
+</body>
+</html>
