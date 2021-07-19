@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase - Parte 1</title>
+    <link rel="stylesheet" href="css/miestilo.css" type="text/css">
+</head>
+<body>
+    <div class="contenedor">
+    <form action="">
+        <label for="txtNom">Nombres:</label>
+        <input type="text" name="txtNom" id="txtNom"><br>
+        <label for="txtApe">Apelidos:</label>
+        <input type="text" name="txtApe" id="txtApe"><br>
+        <label for="txtDni">Dni:</label>
+        <input type="text" name="txtDni" id="txtDni"><br>
+        <label for="cboCurso">Curso:</label>
+        <select name="cboCurso" id="cboCurso">
+            <option value="0">Seleccione un curso</option>
+            <option value="1">Diseño Web</option>
+            <option value="2">Base de Datos</option>
+            <option value="3">Programación Java</option>
+        </select><br>
+        <label for="">Turno:</label>
+        <input type="radio" name="turno" id="rbM"><label for="rbM">Mañana</label>
+        <input type="radio" name="turno" id="rbT"><label for="rbT">Tarde</label>
+        <input type="radio" name="turno" id="rbN"><label for="rbN">Noche</label>
+        <br>
+        <label for="">Estado:</label>
+        <input type="checkbox" name="chkEst" id="chkEst">
+        <label for="chkEst">Habilitado</label><br>
+        <input type="button" value="Registrar" name="btnRegistrar" id="btnRegistrar"><br>
+        <input type="reset" value="Limpiar" id="btnLimpiar" name="btnLimpiar">
+    </form>
+</div>
+    <hr>
+    <table id="tbAlumno">
+        <thead>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Dni</th>
+            <th>Curso</th>
+            <th>Turno</th>
+            <th>Estado</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="js/alumno.js" type="text/javascript"></script>
+    <script src="js/bibliotecaalumno.js" type="text/javascript"></script>
+</body>
+</html>

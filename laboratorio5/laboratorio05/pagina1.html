@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase - Parte 1</title>
+    <!-- //Firebase
+    //Firebase pertenece a Google es una plataforma en la nube para el desarrollo de aplicaciones web y moviles. Esta disponible para android, IOS y web.Fue creada en el año 2011 y paso a ser parte de Google en el año 2014 .Su función escencial es hacer más sencilla la creación y el desarrollo de aplicaciones web, moviles procurando que el trabajo sea más rápido sin perder calidad. Tiene una variada gama de herramientas en las cuales son de facil uso,todo dentro de la misma plataforma, las cuales podemos agrupar en: 
+    desarrollo
+    crecimiento
+    monetización
+    Analisis
+    Desarrollo:
+    Es conocido con develop en firebase, incluye los servicio necesarios para el desarrollo de un proyecto de aplicacion web o movil.
+    Dentro de las herramientas de desarollo podemos encontrar: 
+    Realtime Database
+    Es una de las herramientas más destacadas de firebase, es una base 
+    de datos en tiempo real. Estas se alojan en la nube, son de tipoNoSQL
+    y almacenan los datos como JSON
+    Existen 2 tipos de base de datos
+    La base de datos relacional: donde todas las tablas estan relacionadas 
+    entre si, por medio de las llaves primarias y las llaves foraneas 
+    La base de datos no relacional: donde las tablas no estan relacionadas, por lo general se les llama NoSQL y utilizan JSON para almacenar la información, JSON viene de las siglas Javascript object Notation, se trata de un formato para guardar e intercambiar informacion que cualquier persona puede leer. Sus archivos de guardan extensión .json -->
+</head>
+<body>
+    <form action="">
+        <label for="txtNom"> Nombres</label>
+        <input type="text" name="txtNom" id="txtNom" placeholder="Ingrese sus nombres">
+        <br>
+        <label for="txtApe"> Apellidos: </label>
+        <input type="text" name="txtApe" id="txtApe" placeholder="Ingrese sus apellidos">
+        <br>
+        <label for="txtCor"> Correo: </label>
+        <input type="mail" name="txtCor" id="txtCor" placeholder="Ingrese su correo">
+        <br>
+        <input type="button" value="Registrar" id="btnRegistrar" name="btnRegistrar">
+        <input type="reset" value="Limpiar" id="btnLimpiar" name="btnLimpiar">
+    </form>
+    <hr>
+    <table id="tbRegistro">
+        <thead>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Correo</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="js/registro.js" type="text/javascript"></script>
+    <script src="js/bibliotecaregistro.js" type="text/javascript"></script>
+</body>
+</html>
